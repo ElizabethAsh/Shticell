@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<FlowPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="216.0" styleClass="root" stylesheets="@style/ranges.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.sheetRoomComponents.ranges.rangesController">
+   <children>
+      <GridPane hgap="5.0" prefHeight="300.0" prefWidth="226.0" vgap="2.0" GridPane.vgrow="ALWAYS">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.6666259765625" minWidth="5.000022252400717" prefWidth="16.999979654947918" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.33329264322917" minWidth="10.0" prefWidth="85.66668701171875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.33331298828125" minWidth="10.0" prefWidth="89.33333333333331" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="74.33331298828125" minWidth="10.0" prefWidth="18.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="44.333343505859375" minHeight="6.999980608622234" prefHeight="12.33332411448161" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="44.333343505859375" minHeight="10.0" prefHeight="31.999993642171226" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="44.333343505859375" minHeight="7.333335876464844" prefHeight="18.666666666666657" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="72.66666666666666" minHeight="10.0" prefHeight="50.000010172526046" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="76.33331489562988" minHeight="10.0" prefHeight="50.666666666666686" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="99.00000762939453" minHeight="10.0" prefHeight="53.333348592122405" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="98.00001017252606" minHeight="10.0" prefHeight="47.33331807454425" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label id="ranges-title" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="234.0" text="Ranges" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+            <Button fx:id="addNewRangeButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNewRangeListener" prefHeight="35.0" prefWidth="170.0" styleClass="range-button" text="Add new range" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="DeleteRangeButton" alignment="CENTER" mnemonicParsing="false" onAction="#DeleteRangeListener" prefHeight="35.0" prefWidth="170.0" styleClass="range-button" text="Delete range" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <Button fx:id="DisplayRangeButton" alignment="CENTER" mnemonicParsing="false" onAction="#displayRangeListener" prefHeight="35.0" prefWidth="170.0" styleClass="range-button" text="Display range" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</FlowPane>

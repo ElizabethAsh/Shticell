@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="211.0" spacing="15.0" stylesheets="@commands-panel.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.dashboardComponents.commandsPanel.CommandsPanelController">
+   <children>
+      <Label id="commands-title" alignment="CENTER" prefHeight="17.0" prefWidth="189.0" text="Commands" />
+      <Button mnemonicParsing="false" onAction="#viewSheetListener" prefHeight="29.0" prefWidth="203.0" styleClass="commands-button" text="View Sheet" />
+      <Button mnemonicParsing="false" onAction="#requestPermissionListener" prefHeight="29.0" prefWidth="199.0" styleClass="commands-button" text="request permission" />
+      <Button mnemonicParsing="false" onAction="#AcknowledgementOrDenyPermissionRequestListener" styleClass="commands-button" text="Ack\Deny permission request" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</VBox>

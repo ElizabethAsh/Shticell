@@ -1,0 +1,31 @@
+#title-label{
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: #0077b6;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+#load-sheet-file-button{
+    -fx-font-size: 14px;
+    -fx-background-color: #0077b6;
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+#load-sheet-file-button:hover {
+    -fx-background-color: #005f8c;
+    -fx-text-fill: white;
+}
+
+#greeting-label{
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 17px;
+    -fx-text-fill: #4A90E2;
+    -fx-background-color: #E8F4FA;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}

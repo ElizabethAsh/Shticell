@@ -1,0 +1,39 @@
+#titleLabel {
+    -fx-font-size: 18px;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+#infoLabel {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+}
+
+.combo-box {
+    -fx-background-color: #F9F9F9;
+    -fx-border-color: #CCCCCC;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+.ok-button {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.ok-button:hover {
+    -fx-background-color: darkgreen;
+    -fx-cursor: hand;
+}
+
+.cancel-button {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.cancel-button:hover {
+    -fx-background-color: darkred;
+    -fx-cursor: hand;
+}

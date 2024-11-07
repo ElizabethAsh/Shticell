@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="326.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.dashboardComponents.PermissionsTable.PermissionsTableController">
+   <children>
+      <TableView fx:id="permissionsTable" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" >
+        <columns>
+          <TableColumn fx:id="usernameColumn" prefWidth="89.99996948242188" text="Username" />
+          <TableColumn fx:id="PermissionTypeColumn" prefWidth="114.66659545898438" text="Permission Type" />
+            <TableColumn fx:id="ApprovalStatusColumn" prefWidth="121.3333740234375" text="Approval Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

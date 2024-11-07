@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" minHeight="100.0" minWidth="100.0" prefHeight="132.0" prefWidth="1176.0" spacing="14.0" stylesheets="@top-bar.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.dashboardComponents.topBar.TopBarController">
+   <children>
+      <Label id="title-label" alignment="CENTER" prefHeight="52.0" prefWidth="1176.0" text="Shticell" />
+      <GridPane prefHeight="97.0" prefWidth="1176.0" vgap="10.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="382.6666259765625" minWidth="0.0" prefWidth="0.0" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="1091.3333333333333" minWidth="10.0" prefWidth="1091.3333333333333" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="94.666748046875" minWidth="10.0" prefWidth="48.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="36.333353678385414" minHeight="10.0" prefHeight="31.00001017252604" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="38.66668701171875" minHeight="10.0" prefHeight="30.99998982747396" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="21.33331298828125" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label id="greeting-label" fx:id="userGreetingLabel" alignment="CENTER" prefHeight="30.0" prefWidth="183.0" text="Label" GridPane.columnIndex="1" />
+            <Button id="load-sheet-file-button" alignment="CENTER" mnemonicParsing="false" onAction="#LoadSheetFileButtonListener" prefHeight="46.0" prefWidth="193.0" text="Load Sheet File Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>

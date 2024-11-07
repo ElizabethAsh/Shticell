@@ -1,0 +1,86 @@
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 5px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 5px;
+}
+
+.label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.label-primary {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.ok-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+    -fx-cursor: hand;
+}
+
+.cancel-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+    -fx-cursor: hand;
+}
+
+.ok-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.cancel-button:hover {
+    -fx-background-color: #e53935;
+}
+
+.label-error {
+    -fx-text-fill: #dd1d1d;
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+}
+
+.text-field {
+    -fx-pref-width: 143px;
+    -fx-pref-height: 30px;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.error-text-field {
+    -fx-pref-width: 143px;
+    -fx-pref-height: 30px;
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.pane-white {
+    -fx-background-color: white;
+}
+.grid-custom {
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}
+
+VBox {
+    -fx-background-color: #fff;
+    -fx-background-radius: 5;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}

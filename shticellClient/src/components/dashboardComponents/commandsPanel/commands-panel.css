@@ -1,0 +1,26 @@
+#commands-title{
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3C556E;
+    -fx-padding: 10 0 10 0;
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.1), 2, 0, 0, 1);
+}
+
+.commands-button{
+    -fx-font-size: 14px;
+    -fx-background-color: #6A8CAF;
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.commands-button:hover{
+    -fx-font-size: 14px;
+    -fx-background-color: #5B7C9D;
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}

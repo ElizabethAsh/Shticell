@@ -1,0 +1,42 @@
+
+.dynamic-button {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #dddddd);
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 15px;
+    -fx-border-color: transparent;
+}
+
+.dynamic-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #e6e6e6, #cccccc);
+}
+
+.dynamic-slider {
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-track-color: #5a5a5a;
+    -fx-background-radius: 10px;
+    -fx-track-radius: 10px;
+}
+
+.dynamic-slider .thumb {
+    -fx-background-color: #0096c9;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.0, 0, 1);
+}
+
+.dynamic-textfield {
+    -fx-border-color: #ccc;
+    -fx-background-color: #f9f9f9;
+    -fx-padding: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.root{
+    -fx-background-color: #d1d5db;
+}
+
+
+

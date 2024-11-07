@@ -1,0 +1,50 @@
+#commands-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #D87093;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+#resetCell-button{
+    -fx-font-size: 12px;
+    -fx-background-color: #FF69B4;
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}
+
+#resetCell-button:hover {
+    -fx-background-color: #FF1493;
+}
+
+#sortOrFilter-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFB6C1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+#enterRange-title{
+    -fx-font-size: 12px;
+    -fx-background-color: #FFC0CB;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+}
+
+.commands-button{
+    -fx-font-size: 12px;
+    -fx-background-color: #FF1493;
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}
+
+.commands-button:hover {
+    -fx-background-color: #C71585;
+}
+
+.root{
+    -fx-background-color: #FFF8E1;
+}

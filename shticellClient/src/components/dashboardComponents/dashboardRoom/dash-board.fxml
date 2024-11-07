@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minHeight="0" minWidth="0" prefHeight="531.0" prefWidth="1213.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.dashboardComponents.dashboardRoom.DashboardController">
+   <top>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="133.0" prefWidth="836.0" BorderPane.alignment="TOP_LEFT">
+         <content>
+            <fx:include fx:id="topBarComponent" source="../topBar/top-bar.fxml" />
+         </content>
+      </ScrollPane>
+   </top>
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="379.0" prefWidth="635.0" BorderPane.alignment="CENTER">
+         <content>
+            <SplitPane fx:id="splitPane" dividerPositions="0.5" orientation="VERTICAL" prefHeight="379.0" prefWidth="635.0">
+              <items>
+                  <fx:include fx:id="availableSheetsTableComponent" source="../availableSheetsTable/available-sheets-table.fxml" />
+                  <fx:include fx:id="permissionsTableComponent" source="../PermissionsTable/permissions-table.fxml" />
+              </items>
+            </SplitPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <right>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="398.0" prefWidth="226.0" BorderPane.alignment="CENTER">
+         <content>
+            <fx:include fx:id="commandsPanelComponent" source="../commandsPanel/commands-panel.fxml" />
+         </content>
+      </ScrollPane>
+   </right>
+</BorderPane>

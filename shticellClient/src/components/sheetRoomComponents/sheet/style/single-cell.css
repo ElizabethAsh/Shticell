@@ -1,0 +1,40 @@
+.single-cell {
+    -fx-border-color: black;
+    -fx-padding: 3px;
+    -fx-font-weight: bold;
+}
+
+.background-cell {
+    -fx-background-color: white;
+    -fx-font-weight: bold;
+}
+
+.single-cell:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.5, 0, 0);
+}
+
+#selected-cell {
+    -fx-effect: dropshadow(gaussian, rgba(0, 40, 255, 0.75), 10, 0.5, 0, 0);
+}
+
+.single-cell.depends-on-cell {
+    -fx-border-color: dodgerblue;
+    -fx-border-width: 3px;
+    -fx-border-style: dashed;
+    -fx-effect: dropshadow(gaussian, rgba(30, 144, 255, 0.75), 10, 0.5, 0, 0);
+}
+
+.single-cell.influence-on-cell {
+    -fx-border-color: limegreen;
+    -fx-border-width: 3px;
+    -fx-border-style: dashed;
+    -fx-effect: dropshadow(gaussian, rgba(50, 205, 50, 0.75), 10, 0.5, 0, 0);
+}
+
+.single-cell.range-cell {
+    -fx-border-color: cornflowerblue;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(gaussian, rgba(100, 149, 237, 0.75), 10, 0.5, 0, 0);
+}
+
+

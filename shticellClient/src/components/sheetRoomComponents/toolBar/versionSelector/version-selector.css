@@ -1,0 +1,77 @@
+
+.root {
+    -fx-background-color: #f0f4f8;
+    -fx-padding: 20;
+    -fx-font-family: "Arial";
+}
+
+
+#title-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-padding: 10;
+}
+
+.ok-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+    -fx-cursor: hand;
+}
+
+.cancel-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+    -fx-cursor: hand;
+}
+
+.ok-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.cancel-button:hover {
+    -fx-background-color: #e53935;
+}
+
+
+#infoLabel, #errorLabel {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555;
+}
+
+
+#errorLabel {
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+    -fx-padding: 5;
+}
+
+
+#versionComboBox {
+    -fx-padding: 5;
+    -fx-background-color: white;
+    -fx-border-color: #bbb;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+
+VBox, HBox {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+VBox {
+    -fx-background-color: #fff;
+    -fx-background-radius: 5;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="1176.0" styleClass="root" stylesheets="@style/action-bar.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.sheetRoomComponents.toolBar.ActionBarController">
+   <children>
+          <Label id="title-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="1176.0" text="Shticell" />
+        <GridPane alignment="TOP_CENTER" hgap="3.0" prefHeight="147.0" prefWidth="1176.0" vgap="7.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" maxWidth="30.0" minWidth="8.666658401489258" percentWidth="1.0" prefWidth="8.666658401489258" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="123.33334159851074" minWidth="-Infinity" prefWidth="123.33334159851074" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="250.0" minWidth="-Infinity" prefWidth="250.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="216.0" minWidth="-Infinity" prefWidth="216.0" />
+                <ColumnConstraints hgrow="ALWAYS" minWidth="-Infinity" prefWidth="100.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="145.99997965494788" minWidth="-Infinity" prefWidth="145.99997965494788" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="101.99995930989587" minWidth="68.0" prefWidth="92.66668701171875" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="60.00002034505212" minWidth="10.0" prefWidth="52.66668701171875" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="30.0" minWidth="0.0" percentWidth="1.0" prefWidth="7.333333333333371" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="60.0" minHeight="5.0" prefHeight="30.0" />
+            <RowConstraints maxHeight="48.0" minHeight="21.666676839192704" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="18.333343505859375" vgrow="NEVER" />
+            </rowConstraints>
+            <children>
+                <Button id="versionSelector-button" fx:id="versionSelectorButton" alignment="CENTER" mnemonicParsing="false" onAction="#versionSelectorListener" prefHeight="36.0" prefWidth="147.0" styleClass="toolBar-button" text="Version Selector" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                <GridPane hgap="5.0" styleClass="gray-background" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="55.00002034505208" minWidth="3.0" prefWidth="43.00001653035481" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.33334859212238" minWidth="10.0" prefWidth="134.000005086263" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.3333079020182" minWidth="10.0" prefWidth="189.33331298828125" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="138.66668701171875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.33331298828125" minWidth="10.0" prefWidth="127.33331298828125" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.66668701171875" minWidth="149.0" prefWidth="238.66668701171875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="9.0" minWidth="5.0" prefWidth="8.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="22.0" minHeight="7.0" prefHeight="7.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="28.0" minHeight="8.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="22.0" minHeight="3.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="10.000000953674316" minHeight="2.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label fx:id="selectedCellIdLabel" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="131.0" text="Selected Cell ID" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <styleClass>
+                                <String fx:value="toolBar-label" />
+                                <String fx:value="gray-background" />
+                            </styleClass>
+                            <GridPane.margin>
+                                <Insets />
+                            </GridPane.margin>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </padding>
+                        </Label>
+                        <Label fx:id="originalCellValueLabel" alignment="CENTER" contentDisplay="TOP" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="187.0" text="Original Cell Value" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <styleClass>
+                                <String fx:value="toolBar-label" />
+                                <String fx:value="gray-background" />
+                            </styleClass>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </padding>
+                            <GridPane.margin>
+                                <Insets />
+                            </GridPane.margin>
+                        </Label>
+                        <Label id="action-line-label" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="196.0" text="Action line" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Button fx:id="updateValueButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#updateValueButtonListener" prefHeight="50.0" prefWidth="111.0" styleClass="toolBar-button" text="Update Value" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                        </Button>
+                        <Label fx:id="lastUpdateCellVersionLabel" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="247.0" text="Last Updated Cell Version" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                            <styleClass>
+                                <String fx:value="toolBar-label" />
+                                <String fx:value="gray-background" />
+                            </styleClass>
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                </GridPane>
+            <Label id="selectStyle-Label" prefHeight="37.0" prefWidth="108.0" text="Select Style:" GridPane.columnIndex="1" />
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="297.0" spacing="10.0" GridPane.columnIndex="2" GridPane.columnSpan="2">
+               <children>
+                  <ComboBox fx:id="skinSelectorComboBox" onAction="#skinSelectorListener" prefWidth="150.0" styleClass="toolBar-comboBox" />
+                  <ComboBox fx:id="animationSelectorComboBox" onAction="#animationSelectorListener" prefWidth="150.0" styleClass="toolBar-comboBox" />
+               </children>
+            </HBox>
+            <Button id="updateToLatestVersion-button" fx:id="updateToLatestVersionButton" mnemonicParsing="false" onAction="#updateToLatestVersionListener" prefHeight="21.0" prefWidth="172.0" text="Update to Latest Version" GridPane.columnIndex="5" GridPane.columnSpan="2" />
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+        </GridPane>
+   </children>
+</VBox>

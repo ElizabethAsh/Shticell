@@ -1,0 +1,47 @@
+
+#ranges-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #83C4E1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+
+.range-button{
+    -fx-font-size: 15px;
+    -fx-background-color: #83C4E1;
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}
+
+.range-button:hover {
+    -fx-background-color: #5FA9C8;
+}
+
+#add-new-range{
+    -fx-font-size: 12px;
+    -fx-background-color: #708DA6;
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}
+
+#add-new-range:hover {
+    -fx-background-color: #5C748A;
+}
+
+.add-new-range-label{
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #333333;
+    -fx-background-color: #F0F0F0;
+    -fx-padding: 3px 7px;
+    -fx-border-color: #B0B0B0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.root{
+    -fx-background-color: #FFFFFF;
+}

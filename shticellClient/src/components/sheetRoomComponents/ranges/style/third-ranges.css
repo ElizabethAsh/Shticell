@@ -1,0 +1,54 @@
+#ranges-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2E8B57;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+#selectRange-title{
+    -fx-font-size: 12px;
+    -fx-background-color: #98FB98;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+    -fx-border-radius: 40px;
+    -fx-background-radius: 40px;
+}
+
+.range-button{
+    -fx-font-size: 15px;
+    -fx-background-color: #3CB371;
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}
+
+.range-button:hover {
+    -fx-background-color: #2E8B57;
+}
+
+#add-new-range{
+    -fx-font-size: 12px;
+    -fx-background-color: #006400;
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}
+
+#add-new-range:hover {
+    -fx-background-color: #004d00;
+}
+
+.add-new-range-label{
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #333333;
+    -fx-background-color: #F0FFF0;
+    -fx-padding: 3px 7px;
+    -fx-border-color: #B0B0B0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.root{
+    -fx-background-color: #E0FFFF;
+}

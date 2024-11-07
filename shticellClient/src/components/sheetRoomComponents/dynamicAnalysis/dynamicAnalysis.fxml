@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="1176.0" spacing="10.0" styleClass="root" stylesheets="@style/dynamic-analysis.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.sheetRoomComponents.dynamicAnalysis.DynamicAnalysisController">
+   <children>
+      <Button fx:id="dynamicChangeButton" mnemonicParsing="false" onAction="#dynamicChangeListener" styleClass="dynamic-button" text="Dynamic Change Button" />
+      <Slider fx:id="dynamicSlider" styleClass="dynamic-slider" />
+      <TextField fx:id="minField" prefHeight="25.0" prefWidth="141.0" promptText="Enter Minimum Value:" styleClass="dynamic-textfield" />
+      <TextField fx:id="maxField" prefHeight="25.0" prefWidth="141.0" promptText="Enter Maximum Value:" styleClass="dynamic-textfield" />
+      <TextField fx:id="stepField" promptText="Enter Step Size:" styleClass="dynamic-textfield" />
+   </children>
+   <padding>
+      <Insets left="15.0" top="10.0" />
+   </padding>
+</HBox>

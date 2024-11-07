@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="298.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.dashboardComponents.availableSheetsTable.AvailableSheetsTableController">
+   <children>
+      <TableView fx:id="sheetsOverviewTable" prefHeight="298.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="usernameOfUploaderColumn" prefWidth="138.66665649414062" text="Username of Uploader" />
+          <TableColumn fx:id="sheetNameColumn" prefWidth="105.3333740234375" text="Sheet Name" />
+            <TableColumn fx:id="sheetSizeColumn" prefWidth="100.6666259765625" text="Sheet Size" />
+            <TableColumn fx:id="permissionTypeColumn" prefWidth="109.33331298828125" text="Permission Type" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

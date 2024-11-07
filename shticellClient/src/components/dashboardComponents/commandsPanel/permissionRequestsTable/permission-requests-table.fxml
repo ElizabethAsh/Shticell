@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="424.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.dashboardComponents.commandsPanel.permissionRequestsTable.PermissionRequestsTableController">
+    <content>
+        <VBox id="root" alignment="CENTER" prefHeight="363.0" prefWidth="487.0" spacing="10.0" stylesheets="@permission-requests-table.css">
+            <children>
+                <TableView fx:id="permissionRequestsTable" prefHeight="265.0" prefWidth="603.0">
+                    <columns>
+                        <TableColumn fx:id="sheetNameColumn" prefWidth="129.33331310749054" text="Sheet Name" />
+                        <TableColumn fx:id="requestingUserColumn" prefWidth="140.00003051757812" text="Requesting User" />
+                        <TableColumn fx:id="requestedPermissionColumn" prefWidth="154.66668701171875" text="Requested Permission" />
+                        <TableColumn fx:id="approveOrDenyColumn" prefWidth="176.66664632161462" />
+                    </columns>
+                </TableView>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                    <children>
+                        <Button maxHeight="35.0" maxWidth="100.0" mnemonicParsing="false" onAction="#handleOKButtonAction" prefHeight="35.0" prefWidth="100.0" styleClass="ok-button" text="Ok" />
+                        <Button maxHeight="35.0" maxWidth="100.0" mnemonicParsing="false" onAction="#handleCancelButtonAction" prefHeight="35.0" prefWidth="100.0" styleClass="cancel-button" text="Cancel" />
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="5.0" />
+            </padding>
+        </VBox>
+    </content>
+</ScrollPane>

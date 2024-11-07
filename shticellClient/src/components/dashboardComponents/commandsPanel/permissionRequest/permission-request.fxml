@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.dashboardComponents.commandsPanel.permissionRequest.PermissionRequestController">
+    <content>
+        <FlowPane alignment="CENTER" stylesheets="@permission-request.css">
+            <children>
+                <VBox id="titleLabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="364.0">
+                    <children>
+                  <HBox prefHeight="37.0" prefWidth="297.0">
+                     <children>
+                        <Label id="title-label" fx:id="titleLabel" alignment="CENTER" prefHeight="17.0" prefWidth="355.0" />
+                     </children>
+                  </HBox>
+                        <HBox alignment="CENTER" prefHeight="53.0" prefWidth="309.0" spacing="10.0">
+                            <children>
+                                <Label id="infoLabel" prefHeight="39.0" prefWidth="166.0" text="Choose permission level:" />
+                        <ComboBox fx:id="permissionOptionsBox" prefWidth="150.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets left="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="59.0" prefWidth="364.0" spacing="10.0">
+                            <children>
+                                <Button alignment="CENTER" maxHeight="35.0" maxWidth="100.0" mnemonicParsing="false" onAction="#handleOKButtonAction" prefHeight="30.0" prefWidth="100.0" styleClass="ok-button" text="OK" />
+                                <Button maxHeight="35.0" maxWidth="100.0" mnemonicParsing="false" onAction="#handleCancelButtonAction" prefHeight="30.0" prefWidth="100.0" styleClass="cancel-button" text="Cancel" />
+                            </children>
+                        </HBox>
+                    </children>
+                    <padding>
+                        <Insets top="5.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </FlowPane>
+    </content>
+</ScrollPane>

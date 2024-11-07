@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: main.ShticellMain
+Class-Path: engine.jar dto.jar mod/jaxb-core.jar mod/jaxb-impl.jar mod/jaxb-xjc.jar mod/jaxb-jxc.jar mod/jakarta.xml.bind-api.jar mod/jakarta.activation-api.jar mod/angus-activation.jar google-gson-2.1/gson-2.1.jar google-gson-2.1/gson-2.1-javadoc.jar google-gson-2.1/gson-2.1-sources.jar okHttp/annotations-13.0.jar okHttp/kotlin-stdlib-1.4.10.jar okHttp/kotlin-stdlib-common-1.4.10.jar okHttp/okhttp-4.9.1.jar okHttp/okio-2.8.0.jar
+
+

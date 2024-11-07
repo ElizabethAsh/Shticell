@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="shticellWebApp:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/shticellWebApp_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="shticellWebApp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="shticellWebApp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="artifact" artifact-name="engine" />
+          <element id="artifact" artifact-name="dto" />
+          <element id="library" level="project" name="google-gson-2" />
+          <element id="library" level="project" name="mod" />
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
